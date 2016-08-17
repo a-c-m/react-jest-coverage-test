@@ -1,0 +1,26 @@
+diff --git a/Currency.jsx b/Currency.jsx
+index 1516153..9931850 100644
+--- a/Currency.jsx
++++ b/Currency.jsx
+@@ -24,4 +24,8 @@ Currency.defaultProps = {
+   format: '$0,0',
+ };
+ 
++const untested = () => {
++  return 'true';
++};
++
+ export default Currency;
+diff --git a/__tests__/HelloWorld.js b/__tests__/HelloWorld.js
+index 8604a58..d33e42b 100644
+--- a/__tests__/HelloWorld.js
++++ b/__tests__/HelloWorld.js
+@@ -5,7 +5,7 @@ import HelloWorld from '../HelloWorld';
+ describe('HelloWorld', () => {
+   describe('#test', () => {
+     it('should return "Hello World"', () => {
+-      expect(HelloWorld.test()).toEqual('Hello World');
++      // expect(HelloWorld.test()).toEqual('Hello World');
+     })
+   })
+ })
