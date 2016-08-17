@@ -4,4 +4,4 @@ class HelloWorld {
   }
 }
 
-export default HelloWorld
+export default HelloWorld;
