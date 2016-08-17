@@ -1,0 +1,40 @@
+{
+  "name": "react-jest-coverage-test",
+  "version": "1.0.0",
+  "description": "A test to see if we can hit 4x100% coverage",
+  "main": "index.js",
+  "scripts": {
+    "test": "./node_modules/jest-cli/bin/jest.js --no-cache"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/a-c-m/react-jest-coverage-test.git"
+  },
+  "author": "Alex McFadyen <npm@acmconsulting.eu>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/a-c-m/react-jest-coverage-test/issues"
+  },
+  "homepage": "https://github.com/a-c-m/react-jest-coverage-test#readme",
+  "dependencies": {
+    "babel": "^6.5.2",
+    "babel-preset-es2015": "^6.13.2",
+    "babel-preset-react": "^6.11.1",
+    "babel-preset-stage-0": "^6.5.0",
+    "classnames": "^2.2.5",
+    "numeral": "^1.5.3",
+    "react": "^15.3.0"
+  },
+  "devDependencies": {
+    "enzyme": "^2.4.1",
+    "jest-cli": "^14.1.0",
+    "babel-jest": "^14.1.0",
+    "react-addons-test-utils": "^15.3.0",
+    "react-dom": "^15.3.0"
+  },
+  "jest": {
+    "automock": false,
+    "collectCoverage": true,
+    "verbose": true
+  }
+}
