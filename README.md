@@ -51,7 +51,43 @@ even if we force latest `jest` and `bable-jest`:
 `rm -rf node_modules/jest; npm install jest@test babel-jest@test multimatch istanbul-lib-instrument; npm test`
 
 ```
+> jest --no-cache
 
+  HelloWorld
+    #test
+      ✓ should return "Hello World" (5ms)
+
+ PASS  __tests__/HelloWorld.js (8.482s)
+  UI Number atom
+    ✓ should display the default formating (14ms)
+    ✓ should display the default number wrapped in a span (2ms)
+    ✓ should allow the formating as a prop (1ms)
+    ✓ should allow a custom formating (1ms)
+    ✓ should allow a custom tag (1ms)
+    ✓ should allow a custom props (example: component as a link) (3ms)
+
+ PASS  __tests__/Number.js (9.154s)
+  UI Currency atom
+    ✓ should display the default formating (29ms)
+    ✓ should display the default number wrapped in a span (9ms)
+    ✓ should allow the formating as a prop (4ms)
+    ✓ should allow a custom formating (5ms)
+    ✓ should allow a custom tag (4ms)
+    ✓ should allow a custom props (example: component as a link) (4ms)
+    ✓ should allow a custom class name (4ms)
+    ✓ should not pass the custom className to the child (47ms)
+    ✓ should properly calculate the classNames (72ms)
+
+ PASS  __tests__/Currency.js (9.454s)
+---------------|----------|----------|----------|----------|----------------|
+File           |  % Stmts | % Branch |  % Funcs |  % Lines |Uncovered Lines |
+---------------|----------|----------|----------|----------|----------------|
+All files      |      100 |      100 |      100 |      100 |                |
+ Currency.jsx  |      100 |      100 |      100 |      100 |                |
+ HelloWorld.js |      100 |      100 |      100 |      100 |                |
+ Number.jsx    |      100 |      100 |      100 |      100 |                |
+---------------|----------|----------|----------|----------|----------------|
+16 tests passed (16 total in 3 test suites, run time 10.741s)
 ```
 
 GREAT!
