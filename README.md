@@ -1,6 +1,8 @@
 # react-jest-coverage-test
 A test to see if we can hit 4x100% coverage;
 
+Currently it seems we can only hit 100% on lines, the rest are hit and miss.
+
 `npm test`
 
 ```
@@ -46,7 +48,7 @@ All files                  |    79.31 |    63.33 |    78.57 |      100 |        
 
 even if we force latest jest (and `multimatch` and `istanbul-lib-instrument`):
 
-`rm -rf node_modules/jest-cli; npm install jest@test; npm test`
+`rm -rf node_modules/jest-cli; npm install jest@test multimatch istanbul-lib-instrument; npm test`
 
 ```
 HelloWorld
@@ -79,9 +81,9 @@ PASS  __tests__/Currency.js (13.651s)
 File           |  % Stmts | % Branch |  % Funcs |  % Lines |Uncovered Lines |
 ---------------|----------|----------|----------|----------|----------------|
 All files      |    79.31 |    63.33 |    78.57 |      100 |                |
-Currency.jsx  |    68.18 |    66.67 |       75 |      100 |                |
-HelloWorld.js |    81.82 |       50 |    71.43 |      100 |                |
-Number.jsx    |    92.86 |       75 |      100 |      100 |                |
+ Currency.jsx  |    68.18 |    66.67 |       75 |      100 |                |
+ HelloWorld.js |    81.82 |       50 |    71.43 |      100 |                |
+ Number.jsx    |    92.86 |       75 |      100 |      100 |                |
 ---------------|----------|----------|----------|----------|----------------|
 16 tests passed (16 total in 3 test suites, run time 15.26s)
 Please run `npm install` to use the version of Jest intended for this project.
