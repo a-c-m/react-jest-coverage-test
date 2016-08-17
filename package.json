@@ -4,7 +4,7 @@
   "description": "A test to see if we can hit 4x100% coverage",
   "main": "index.js",
   "scripts": {
-    "test": "./node_modules/jest-cli/bin/jest.js --no-cache"
+    "test": "jest --no-cache"
   },
   "repository": {
     "type": "git",
